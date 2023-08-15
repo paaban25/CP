@@ -22,7 +22,7 @@ int main()
         {
             /* code */
         }
-        else if (s[0]==)
+        else if (s[0]=='!')
         {
             /* code */
         }
