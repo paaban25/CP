@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "algorithm": "cpp",
+        "climits": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "format": "cpp",
+        "functional": "cpp",
+        "cmath": "cpp"
+    }
+}
