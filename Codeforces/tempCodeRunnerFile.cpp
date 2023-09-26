@@ -1,14 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-void reverseStr(string& str)
-{
-    int n = str.length();
- 
-    // Swap character starting from two
-    // corners
-    for (int i = 0; i < n / 2; i++)
-        swap(str[i], str[n - i - 1]);
-}
 int main()
 {
     int t;
@@ -16,29 +7,16 @@ int main()
     while(t--){
         int n;
         cin>>n;
-        if (n%2==0)
+        int arr[n];
+        int sum=0;
+        for (int i = 0; i < n; i++)
         {
-            cout<<-1<<endl;
+            cin>>arr[i];
+            sum+=arr[i];
         }
-        else{
-            string s="";
-            while(n!=1){
-                if (n%4==1)
-                {
-                    n+=1;
-                    n/=2;
-                    s+='1 ';
-                }
-                else{
-                    n-=1;
-                    n/=2;
-                    s+='2 ';
-                }
-            }
-            cout<<s.length()<<endl;
-            reverseStr(s);
-            cout<<s<<endl;
-        }
+        sort(arr,arr+n);
+        cout<<sum/(2*arr[0] -1 )<<endl;
+
     }
     return 0;
 }
