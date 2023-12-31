@@ -5,7 +5,7 @@ int main()
     int t;
     cin>>t;
     while(t--){
-        int a,b,c;
+        long long int a,b,c;
         cin>>a>>b>>c;
         if (a<c)
         {
@@ -22,7 +22,7 @@ int main()
         {
             cout<<-1<<"  ";
         }
-        
+        cout<<endl;
         
     }
     return 0;
